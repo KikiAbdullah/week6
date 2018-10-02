@@ -1,0 +1,20 @@
+<!-- <p>
+  tugas works!
+</p> -->
+<label>Username</label>
+<!-- <input 
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"> -->
+<input 
+  type="text"
+  class="form-control"
+  [(ngModel)]="username">
+<p>{{ username }}</p>
+<button 
+  class="btn btn-primary" 
+  [disabled]="cekInput()"
+  (click)="onCreationStatus()">Add Server</button>
+<p>{{ serverCreationStatus }}</p>
+<app-server></app-server>
+<app-server></app-server>
